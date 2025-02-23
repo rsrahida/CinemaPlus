@@ -1,0 +1,35 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+}
+.image {
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a2127c1;
+  z-index: 1;
+}
+.text {
+  width: 900px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  z-index: 2;
+  p {
+    width: 900px;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}

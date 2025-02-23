@@ -1,0 +1,75 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  text-align: center;
+  border: 5px solid green;
+}
+.not-found-content {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+.not-found-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  animation: bounce 1s ease infinite;
+}
+.smile {
+  font-size: 80px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  animation: sad-face 1.5s ease-in-out infinite;
+}
+.not-found-message {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+.back-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+.back-home-button:hover {
+  background-color: green;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes sad-face {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

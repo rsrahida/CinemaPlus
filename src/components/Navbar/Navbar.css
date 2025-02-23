@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 96, 6);
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  position: relative;
+  color: rgb(0, 96, 6);
+  text-decoration: none;
+  font-size: 20px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: color 0.5s ease;
+  z-index: 2;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(98, 240, 98);
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+.navbar a.active {
+  color: black;
+}
+.navbar a.active::before {
+  width: 100%;
+}
