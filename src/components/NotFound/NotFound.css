@@ -45,7 +45,6 @@
 .back-home-button:hover {
   background-color: green;
 }
-
 @keyframes bounce {
   0%,
   20%,
@@ -61,7 +60,6 @@
     transform: translateY(-5px);
   }
 }
-
 @keyframes sad-face {
   0% {
     transform: rotate(0deg);
