@@ -30,7 +30,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgb(98, 240, 98);
+  background-color: rgba(0, 100, 13, 0.6);
   transition: width 0.5s ease-in-out;
   z-index: -1;
 }

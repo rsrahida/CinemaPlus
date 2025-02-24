@@ -10,16 +10,16 @@ const Navbar = () => {
         Home
       </Link>
       <Link
-        to="/actions"
-        className={location.pathname === "/actions" ? "active" : ""}
-      >
-        Actions
-      </Link>
-      <Link
         to="/services"
         className={location.pathname === "/services" ? "active" : ""}
       >
         Services
+      </Link>
+      <Link
+        to="/actions"
+        className={location.pathname === "/actions" ? "active" : ""}
+      >
+        Actions
       </Link>
       <Link
         to="/about"

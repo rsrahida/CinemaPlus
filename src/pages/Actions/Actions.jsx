@@ -13,18 +13,16 @@ const Actions = () => {
         <p>Actions</p>
         <img src={actionImage} className="action" />
         <span>
-          Həftənin hər günü 5 AZN-dən* başlayan qiymətlərlə film izləyə
-          bilərsiniz.
+          Watch movies every day of the week at prices starting from 5 AZN*
           <br />
-          Hər həftənin Çərşənbə axşamı günü isə aşağıda qeyd olunanlar
-          keçərlidir:
-          <br /> Günboyu tariflər: 2D - 5 AZN 3D - 6 AZN <br />
-          Platinum və Diamond (VİP) biletləri üzrə günboyu tarif - 20 AZN <br />
-          Qeyd: Bayram və digər qeyri-iş günləri aksiya keçərli deyil.
-          <br /> SKYBOX zalı və 4DX formatı üçün keçərli deyil. ***Super Gün və
-          digər aksiyalar zamanı, bonus, endirim və keşbek kartlarından istifadə
-          etmək mümkün deyil. Bilet alarkən yalnız 1 aksiyadan istifadə etmək
-          olar.
+          On Tuesday of every week, what is mentioned below applies to:
+          <br /> Tariffs throughout the day: 2D - 5 AZN 3D - 6 AZN <br />
+          All-day tariff for Platinum and Diamond (VIP) tickets - 20 AZN <br />
+          Note: The promotion is not valid on holidays and other non-working
+          days.
+          <br /> Not valid for SKYBOX hall and 4DX format. ***Super Day and
+          during other promotions, using bonus, discount and cashback cards it
+          is impossible to do. To use only 1 promotion when buying a ticket can
         </span>
       </div>
     </div>
