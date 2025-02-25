@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="image-container">
       <img src={image} alt="About" className="image" />
-      <div className="overlay"></div> {/* Yaşıl bulanıqlı örtük */}
+      <div className="overlay"></div>
       <div className="text">
         <h1>“Cinema Mastercard”</h1>
         <p>

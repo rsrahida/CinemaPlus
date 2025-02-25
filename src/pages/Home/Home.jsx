@@ -1,13 +1,15 @@
 import React from "react";
 import "./Home.css";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 
 const Home = ({ movies }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const category = searchParams.get("category");
 
   const filteredMovies = category
-    ? movies.filter((movie) => movie.category === category)
+    ? movies.filter(
+        (movie) => movie.category.toLowerCase() === category.toLowerCase()
+      )
     : movies;
 
   const handleCategoryChange = (category) => {
@@ -32,10 +34,14 @@ const Home = ({ movies }) => {
       <div className="lists">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (
-            <div key={movie.id} className="posterBox">
+            <Link
+              to={`/movie/${movie.id}`}
+              key={movie.id}
+              className="posterBox"
+            >
               <p className="homeText">{movie.title}</p>
               <img src={movie.poster} alt={movie.title} className="poster" />
-            </div>
+            </Link>
           ))
         ) : (
           <p className="notFound">No movies found in this category...</p>
